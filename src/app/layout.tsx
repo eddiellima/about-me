@@ -22,9 +22,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning={true} style={poppins.style}>
+    <html
+      lang="en"
+      suppressHydrationWarning={true}
+      style={poppins.style}
+      className="bg-primary"
+    >
       <body suppressHydrationWarning={true}>
-        <div className="py-10 px-16 flex-col gap-10 min-h-screen">
+        <div className="flex py-10 px-16 flex-col gap-10 min-h-screen">
           <header>
             <Navbar />
           </header>
